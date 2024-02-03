@@ -27,16 +27,12 @@ int main(){
 		cout << "--> Event " << i+1 << ":\n";
 		cout << "	--> Enter the event's name: ";
 		cin >> data[i].name;
-		getchar();
 		cout << "	--> Enter the event's date: ";
 		cin >> data[i].date;
-		getchar();
 		cout << "	--> Enter the event's venue: ";
 		cin >> data[i].vanue;
-		getchar();
 		cout << "	--> Enter the name of organizer: ";
 		cin >> data[i].organizer;
-		getchar();
 	}
 	
 	// Displaying all the data related to each event 
@@ -73,7 +69,9 @@ int main(){
 		}
 	}
 	
+	delete[] data;
 	
+	return 0;
 }
 
 
