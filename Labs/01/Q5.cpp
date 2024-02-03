@@ -25,7 +25,6 @@ int main(){
 	for(i=0; i<n; i++){
 		cout << "\n";
 		cout << "--> Event " << i+1 << ":\n";
-		cin.ignore();
 		cout << "	--> Enter the event's name: ";
 		cin >> data[i].name;
 		cout << "	--> Enter the event's date: ";
