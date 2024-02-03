@@ -25,6 +25,7 @@ int main(){
 	for(i=0; i<n; i++){
 		cout << "\n";
 		cout << "--> Event " << i+1 << ":\n";
+		cin.ignore();
 		cout << "	--> Enter the event's name: ";
 		cin >> data[i].name;
 		cout << "	--> Enter the event's date: ";
@@ -40,20 +41,11 @@ int main(){
 	cout << "--> Every event's relevant details are:\n";
 	for (i=0; i<n; i++){
 		cout << "\n	--> Event number: " << i+1;
-		/*cout << "\n		--> Name: " << data[i].name;
+		cout << "\n		--> Name: " << data[i].name;
 		cout << "\n		--> Date: " << data[i].date;
 		cout << "\n		--> Venue: " << data[i].vanue;
 		cout << "\n		--> Organizer: " << data[i].organizer;
-		cout << "\n"; */
-		cout << "Event Name: ";
-        cin.ignore();
-        cin.getline(data[i].name, sizeof(data[i].name));
-        cout << "Date: ";
-        cin.getline(data[i].date, sizeof(data[i].date));
-        cout << "Venue: ";
-        cin.getline(data[i].vanue, sizeof(data[i].vanue));
-        cout << "Organizer: ";
-        cin.getline(data[i].organizer, sizeof(data[i].organizer));
+		cout << "\n";
 	}
 	
 	// Displaying all events that match the provided date, including their complete details.
@@ -73,7 +65,6 @@ int main(){
 	
 	return 0;
 }
-
 
 
 
