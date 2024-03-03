@@ -12,6 +12,10 @@ class ValidateString{
     ValidateString(string str){
         this->str = str;
     }
+    /*
+        We make a function constant so the it could not modify an non-static data member.
+        If we do not make a function constant it may modify the value of the data members. 
+    */
     string isValid() const{
         int length = str.length(); // this will store the length of the string to be used in the loop
         int i;
