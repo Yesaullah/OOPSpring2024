@@ -41,6 +41,7 @@ class LoanHelper{
 const float LoanHelper::rate = 0.25; // interest rate is set as 0.25%
 
 int main(){
+    cout<<"Name: Mohammad Yesaullah Sheikh\nRoll no: 23K-0019\n"<<endl;
     LoanHelper h1(1000, 5);
     cout<<"\n--> You have to pay "<<h1.calculateAmount()<<" every month for "<<h1.getMonths()<<" months to repay your loan.\n"<<endl;
 
