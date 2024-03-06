@@ -50,6 +50,9 @@ class Square{
 float Square::allareas = 0;
 
 int main(){
+
+    cout<<"Name: Mohammad Yesaullah Sheikh\nRoll no: 23K-0019\n"<<endl;
+    
     Square sq1(4); // object  creation using parameterized constructor
     sq1.CalculateArea(); // calling member function which calculates the area.
     cout<<"Area of the square = "<<sq1.getarea()<<endl;
