@@ -32,6 +32,7 @@ class ValidateString{
 };
 
 int main(){
+    cout<<"Name: Mohammad Yesaullah Sheikh\nRoll no: 23K-0019\n"<<endl;
     ValidateString s1("Yesaullah"); // only alphabets no spaces or non-alphabetic character
     ValidateString s2("I am from Hyderabad."); // a fullstop is added in the end
     ValidateString s3("1) I study in FAST-NUCES"); // a number is used in the starting
